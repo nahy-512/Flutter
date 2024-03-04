@@ -24,8 +24,12 @@ class Episode extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.green.shade400,
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(
+            color: Colors.green,
+            width: 1,
+          ),
+          color: Colors.green.shade50,
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -38,13 +42,13 @@ class Episode extends StatelessWidget {
               Text(
                 episode.title,
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 16,
                 ),
               ),
               const Icon(
                 Icons.chevron_right_rounded,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ],
           ),

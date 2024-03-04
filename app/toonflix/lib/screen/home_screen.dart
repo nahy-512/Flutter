@@ -21,7 +21,8 @@ class HomeScreen extends StatelessWidget {
           "오늘의 웹툰",
           style: TextStyle(
               fontSize: 24,
-              fontWeight: FontWeight.w400),
+              fontWeight: FontWeight.w400,
+          ),
         ),
       ),
       body: FutureBuilder(

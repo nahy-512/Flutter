@@ -93,7 +93,7 @@ class _DetailScreenState extends State<DetailScreen> {
         ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(50),
+          padding: const EdgeInsets.all(40),
           child: Column(
             children: [
               Row(
@@ -102,7 +102,8 @@ class _DetailScreenState extends State<DetailScreen> {
                   Hero(
                     tag: widget.id,
                     child: Container(
-                      width: 250,
+                      width: 300,
+                      height: 200,
                       clipBehavior: Clip.hardEdge,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
@@ -119,6 +120,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         headers: const {
                           'Referer': 'https://comic.naver.com',
                         },
+                        fit: BoxFit.fitWidth,
                       ),
                     ),
                   ),
